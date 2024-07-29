@@ -6,7 +6,7 @@ from db.database import Database
 
 
 load_dotenv()
-bot = Bot(token=getenv('BOT_TOKEN'))
+bot = Bot(token=getenv('TOKEN'))
 dp = Dispatcher()
 database = Database(
     Path(__file__).parent / "db.sqlite"
